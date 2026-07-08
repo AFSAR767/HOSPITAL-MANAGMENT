@@ -13,7 +13,7 @@ public class DBConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // Connect to MySQL server first (no specific database)
-            c = DriverManager.getConnection("jdbc:mysql://localhost:3306/", "root", "");
+            c = DriverManager.getConnection("jdbc:mysql://localhost:3307/", "root", "");
             s = c.createStatement();
 
             // Auto-create database and tables if they don't exist
